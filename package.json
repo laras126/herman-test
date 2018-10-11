@@ -5,7 +5,6 @@
   "main": "index.js",
   "dependencies": {
     "node-sass": "^4.9.3",
-    "sass-true": "^4.0.0",
     "sassdoc": "^2.5.0",
     "sassdoc-theme-herman": "^3.0.0"
   },
