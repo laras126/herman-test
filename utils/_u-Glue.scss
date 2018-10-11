@@ -1,0 +1,45 @@
+
+/// Glue Parent
+/// ================
+/// This is some great documentation. 
+///
+/// @example markup
+///   <div class="u-Glue_parent">
+///   </div>
+/// @link https://notlaura.com/u-glue/
+/// @group algorithms
+
+.u-Glue_parent {
+	position: relative;
+}
+
+/// Glued Item
+/// ================
+/// This is some great documentation. 
+///
+/// @example scss
+///   @import 'u-Glue';
+///   .c-tag {
+///       @supports( --color: blue ) {
+///         --u-Glue__transform: translateX( -50% );
+///       }
+///   }
+/// @link https://notlaura.com/u-glue/
+/// @group algorithms
+
+.u-Glue {
+	position: absolute;
+
+	&[data-Glue-corner="bottom"] {
+		bottom: 0;
+	}
+	
+	&[data-Glue-corner="right"] {
+		right: 0;
+	}
+
+	@supports( --color: blue ) {
+		transform: var( --u-Glue__transform, initial );
+	}
+
+}
